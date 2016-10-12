@@ -16,3 +16,22 @@ In this repository, I will study data visualization in Rails. This app is a samp
 ```
 curl -o data.csv https://data.maryland.gov/api/views/ag7x-nwtv/rows.csv?accessType=DOWNLOAD
 ```
+
+## Evaluating Data
+
+- format of data
+  + check the delimiter if the data is CSV
+  + prettify it if the data is JSON
+- fields and data types
+  + more than one piece of data?
+  + range?
+  + geographic data(latitude and longitude)?
+  + contains data that needs to be cleaned?
+
+### Tips from the auther
+- Avoid modifying data significantly.
+- Don't create new data.
+
+## Data Fields, Data Dictionary
+
+- Define fields in the dataset
