@@ -32,6 +32,40 @@ curl -o data.csv https://data.maryland.gov/api/views/ag7x-nwtv/rows.csv?accessTy
 - Avoid modifying data significantly.
 - Don't create new data.
 
-## Data Fields, Data Dictionary
+## Data Dictionary
 
 - Define fields in the dataset
+
+## Rake Task
+
+- Helps us streamline tedious or repetitive tasks.
+
+#### Generating a new rake task
+
+```
+rails g task seed import_maryland_residential_sales
+```
+
+## Extract, Transform, Load (ETL)
+
+### Extract
+- Get data.
+
+### Transform
+- Clean up the data.
+
+### Load
+- Load the data into the database.
+
+## Dealing with invalid values
+- e.g., Prevent an invalid value from being coerced to 0.
+- e.g., Raise an exception when data is invalid so that we ca figure out what todo from there.
+
+
+## Misc
+
+### Checking line count of a given file
+
+```
+wc -l db/data_files/data.csv
+```
